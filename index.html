@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factorial Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Factorial Calculator</h1>
+
+    <input type="number" id="numberInput" placeholder="Enter a positive integer" />
+    <div class="buttons">
+      <button onclick="calculateFactorial('iterative')">Iterative</button>
+      <button onclick="calculateFactorial('recursive')">Recursive</button>
+    </div>
+    <p id="result"></p>
+    <p id="error" class="error"></p>
+
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <button class="question">What is a factorial?</button>
+        <div class="answer">A factorial is the product of an integer and all the integers below it. Example: 5! = 5×4×3×2×1 = 120</div>
+      </div>
+      <div class="faq-item">
+        <button class="question">What is the difference between iterative and recursive?</button>
+        <div class="answer">Iterative uses loops to repeat operations; recursive calls itself to perform repeated tasks.</div>
+      </div>
+      <div class="faq-item">
+        <button class="question">Is there a limit to the number input?</button>
+        <div class="answer">Yes, very large numbers may cause performance issues or overflow in JavaScript.</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
